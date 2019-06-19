@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:GPSDO-LCD-2-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -26,7 +26,7 @@ F 3 "" H 9500 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Personal:NEO-6M U7
+L GPSDO-LCD-2-rescue:NEO-6M-Personal U7
 U 1 1 5C3E4064
 P 9800 5050
 F 0 "U7" H 10028 5046 50  0000 L CNN
@@ -37,7 +37,7 @@ F 3 "" H 9800 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J4
+L GPSDO-LCD-2-rescue:Conn_Coaxial-Connector J4
 U 1 1 5C3E5130
 P 700 5650
 F 0 "J4" H 700 5900 50  0000 C CNN
@@ -48,7 +48,7 @@ F 3 " ~" H 700 5650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pspice:DIODE D1
+L GPSDO-LCD-2-rescue:DIODE-pspice D1
 U 1 1 5C3E529B
 P 1650 1000
 F 0 "D1" H 1650 1250 50  0000 C CNN
@@ -59,7 +59,7 @@ F 3 "~" H 1650 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C17
+L GPSDO-LCD-2-rescue:C_Small-Device C17
 U 1 1 5C3E5755
 P 3950 1200
 F 0 "C17" H 4042 1246 50  0000 L CNN
@@ -70,7 +70,7 @@ F 3 "~" H 3950 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C24
+L GPSDO-LCD-2-rescue:C_Small-Device C24
 U 1 1 5C3E57D9
 P 6200 1200
 F 0 "C24" H 6292 1246 50  0000 L CNN
@@ -81,7 +81,7 @@ F 3 "~" H 6200 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C19
+L GPSDO-LCD-2-rescue:CP_Small-Device C19
 U 1 1 5C3E5B67
 P 4400 1200
 F 0 "C19" H 4488 1246 50  0000 L CNN
@@ -92,7 +92,7 @@ F 3 "~" H 4400 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C25
+L GPSDO-LCD-2-rescue:CP_Small-Device C25
 U 1 1 5C3E5BD3
 P 6700 1200
 F 0 "C25" H 6788 1246 50  0000 L CNN
@@ -103,7 +103,7 @@ F 3 "~" H 6700 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C37
+L GPSDO-LCD-2-rescue:CP_Small-Device C37
 U 1 1 5C3E5FA7
 P 10050 4400
 F 0 "C37" H 10150 4400 50  0000 L CNN
@@ -114,7 +114,7 @@ F 3 "~" H 10050 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R24
+L GPSDO-LCD-2-rescue:R-Device R24
 U 1 1 5C3E6386
 P 9600 4250
 F 0 "R24" V 9500 4300 50  0000 C CNN
@@ -125,7 +125,7 @@ F 3 "~" H 9600 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R4
+L GPSDO-LCD-2-rescue:R-Device R4
 U 1 1 5C3E654F
 P 1300 5650
 F 0 "R4" V 1507 5650 50  0000 C CNN
@@ -136,7 +136,7 @@ F 3 "~" H 1300 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R5
+L GPSDO-LCD-2-rescue:R-Device R5
 U 1 1 5C3E6757
 P 2550 2100
 F 0 "R5" V 2700 2200 50  0000 R CNN
@@ -158,7 +158,7 @@ Connection ~ 4400 1000
 Wire Wire Line
 	4400 1000 4850 1000
 $Comp
-L power:GNDREF #PWR024
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR024
 U 1 1 5C3E9DA5
 P 5150 1750
 F 0 "#PWR024" H 5150 1500 50  0001 C CNN
@@ -169,7 +169,7 @@ F 3 "" H 5150 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR021
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR021
 U 1 1 5C3E9E41
 P 4400 1300
 F 0 "#PWR021" H 4400 1050 50  0001 C CNN
@@ -180,7 +180,7 @@ F 3 "" H 4400 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR018
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR018
 U 1 1 5C3E9EDD
 P 3950 1300
 F 0 "#PWR018" H 3950 1050 50  0001 C CNN
@@ -191,7 +191,7 @@ F 3 "" H 3950 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR027
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR027
 U 1 1 5C3EA7CF
 P 6200 1300
 F 0 "#PWR027" H 6200 1050 50  0001 C CNN
@@ -202,7 +202,7 @@ F 3 "" H 6200 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR028
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR028
 U 1 1 5C3EA86B
 P 6700 1300
 F 0 "#PWR028" H 6700 1050 50  0001 C CNN
@@ -232,7 +232,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 2800 8900 3900
 $Comp
-L power:GNDREF #PWR041
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR041
 U 1 1 5C3EDD1F
 P 8900 3900
 F 0 "#PWR041" H 8900 3650 50  0001 C CNN
@@ -243,7 +243,7 @@ F 3 "" H 8900 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR042
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR042
 U 1 1 5C3EDDBB
 P 9400 3900
 F 0 "#PWR042" H 9400 3650 50  0001 C CNN
@@ -266,7 +266,7 @@ Wire Wire Line
 Wire Wire Line
 	9850 3400 9850 3900
 $Comp
-L power:GNDREF #PWR046
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR046
 U 1 1 5C3EEFE2
 P 9850 3900
 F 0 "#PWR046" H 9850 3650 50  0001 C CNN
@@ -277,7 +277,7 @@ F 3 "" H 9850 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR047
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR047
 U 1 1 5C3F3542
 P 10050 4500
 F 0 "#PWR047" H 10050 4250 50  0001 C CNN
@@ -299,7 +299,7 @@ Wire Wire Line
 	10050 4300 10050 4250
 Connection ~ 10050 4250
 $Comp
-L power:GNDREF #PWR04
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR04
 U 1 1 5C407375
 P 700 5850
 F 0 "#PWR04" H 700 5600 50  0001 C CNN
@@ -320,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 5300 9550 5300
 $Comp
-L power:GNDREF #PWR044
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR044
 U 1 1 5C41BE4A
 P 9500 5200
 F 0 "#PWR044" H 9500 4950 50  0001 C CNN
@@ -337,7 +337,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 5100 4050 4100
 $Comp
-L Arduino:Arduino_STM32F103C8T6_2 U3
+L GPSDO-LCD-2-rescue:Arduino_STM32F103C8T6_2-Arduino U3
 U 1 1 5C42486C
 P 5300 3550
 F 0 "U3" H 5450 2420 60  0000 C CNN
@@ -348,7 +348,7 @@ F 3 "" H 4800 3200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR07
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR07
 U 1 1 5C47C461
 P 2900 5950
 F 0 "#PWR07" H 2900 5700 50  0001 C CNN
@@ -359,7 +359,7 @@ F 3 "" H 2900 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR09
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR09
 U 1 1 5C497F48
 P 3050 6950
 F 0 "#PWR09" H 3050 6700 50  0001 C CNN
@@ -389,7 +389,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 1200 1250 1300
 $Comp
-L power:GNDREF #PWR06
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR06
 U 1 1 5C5A141D
 P 1250 1300
 F 0 "#PWR06" H 1250 1050 50  0001 C CNN
@@ -404,7 +404,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 4100 4300 4100
 $Comp
-L power:GNDREF #PWR031
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR031
 U 1 1 5C5CDFEC
 P 7050 2700
 F 0 "#PWR031" H 7050 2450 50  0001 C CNN
@@ -415,7 +415,7 @@ F 3 "" H 7050 2700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDREF #PWR019
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR019
 U 1 1 5C5CE0C2
 P 4250 4600
 F 0 "#PWR019" H 4250 4350 50  0001 C CNN
@@ -458,7 +458,7 @@ NoConn ~ 6600 4500
 Text Notes 4500 2000 0    50   ~ 0
 PIN 5 STM (Quitar el XTAL de la placa)
 $Comp
-L Personal:OPA692 U1
+L GPSDO-LCD-2-rescue:OPA692-Personal U1
 U 1 1 5C46D607
 P 2800 4900
 F 0 "U1" V 3000 4500 50  0000 L CNN
@@ -469,7 +469,7 @@ F 3 "" H 2800 4900 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J3
+L GPSDO-LCD-2-rescue:Conn_Coaxial-Connector J3
 U 1 1 5C47F6D5
 P 700 4700
 F 0 "J3" H 700 4950 50  0000 C CNN
@@ -480,7 +480,7 @@ F 3 " ~" H 700 4700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L GPSDO-LCD-2-rescue:R-Device R3
 U 1 1 5C47F6DB
 P 1300 4700
 F 0 "R3" V 1507 4700 50  0000 C CNN
@@ -491,7 +491,7 @@ F 3 "~" H 1300 4700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDREF #PWR03
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR03
 U 1 1 5C47F6E1
 P 700 4900
 F 0 "#PWR03" H 700 4650 50  0001 C CNN
@@ -508,7 +508,7 @@ Wire Wire Line
 Text Notes 650  4400 0    50   ~ 0
 10Mhz OUT
 $Comp
-L power:GNDREF #PWR08
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR08
 U 1 1 5C45EDEC
 P 3000 3550
 F 0 "#PWR08" H 3000 3300 50  0001 C CNN
@@ -533,7 +533,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 2450 3000 2450
 $Comp
-L Switch:SW_Push SW3
+L GPSDO-LCD-2-rescue:SW_Push-Switch SW3
 U 1 1 5C42A895
 P 3250 3300
 F 0 "SW3" H 3250 3500 50  0000 C CNN
@@ -544,7 +544,7 @@ F 3 "" H 3250 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L GPSDO-LCD-2-rescue:SW_Push-Switch SW2
 U 1 1 5C42A813
 P 3250 2850
 F 0 "SW2" H 3250 3050 50  0000 C CNN
@@ -555,7 +555,7 @@ F 3 "" H 3250 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L GPSDO-LCD-2-rescue:SW_Push-Switch SW1
 U 1 1 5C42A78B
 P 3250 2450
 F 0 "SW1" H 3250 2650 50  0000 C CNN
@@ -566,7 +566,7 @@ F 3 "" H 3250 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J2
+L GPSDO-LCD-2-rescue:Conn_Coaxial-Connector J2
 U 1 1 5C497C03
 P 700 3750
 F 0 "J2" H 700 4000 50  0000 C CNN
@@ -577,7 +577,7 @@ F 3 " ~" H 700 3750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L GPSDO-LCD-2-rescue:R-Device R2
 U 1 1 5C497C09
 P 1300 3750
 F 0 "R2" V 1507 3750 50  0000 C CNN
@@ -588,7 +588,7 @@ F 3 "~" H 1300 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDREF #PWR02
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR02
 U 1 1 5C497C0F
 P 700 3950
 F 0 "#PWR02" H 700 3700 50  0001 C CNN
@@ -605,7 +605,7 @@ Wire Wire Line
 Text Notes 650  3450 0    50   ~ 0
 10Mhz OUT
 $Comp
-L Connector:Conn_Coaxial J1
+L GPSDO-LCD-2-rescue:Conn_Coaxial-Connector J1
 U 1 1 5C4A189C
 P 700 2800
 F 0 "J1" H 700 3050 50  0000 C CNN
@@ -616,7 +616,7 @@ F 3 " ~" H 700 2800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L GPSDO-LCD-2-rescue:R-Device R1
 U 1 1 5C4A18A2
 P 1300 2800
 F 0 "R1" V 1507 2800 50  0000 C CNN
@@ -627,7 +627,7 @@ F 3 "~" H 1300 2800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDREF #PWR01
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR01
 U 1 1 5C4A18A8
 P 700 3000
 F 0 "#PWR01" H 700 2750 50  0001 C CNN
@@ -644,7 +644,7 @@ Wire Wire Line
 Text Notes 650  2500 0    50   ~ 0
 10Mhz OUT
 $Comp
-L Device:C_Small C1
+L GPSDO-LCD-2-rescue:C_Small-Device C1
 U 1 1 5C4AC64C
 P 1750 2800
 F 0 "C1" V 1521 2800 50  0000 C CNN
@@ -655,7 +655,7 @@ F 3 "~" H 1750 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C2
+L GPSDO-LCD-2-rescue:C_Small-Device C2
 U 1 1 5C4AC729
 P 1750 3750
 F 0 "C2" V 1521 3750 50  0000 C CNN
@@ -666,7 +666,7 @@ F 3 "~" H 1750 3750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C3
+L GPSDO-LCD-2-rescue:C_Small-Device C3
 U 1 1 5C4AC84F
 P 1750 4700
 F 0 "C3" V 1521 4700 50  0000 C CNN
@@ -677,7 +677,7 @@ F 3 "~" H 1750 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C4
+L GPSDO-LCD-2-rescue:C_Small-Device C4
 U 1 1 5C4AC95E
 P 1750 5650
 F 0 "C4" V 1521 5650 50  0000 C CNN
@@ -717,7 +717,7 @@ Connection ~ 9950 2400
 Text GLabel 9400 5300 0    50   Input ~ 0
 5Vcc
 $Comp
-L Device:C_Small C6
+L GPSDO-LCD-2-rescue:C_Small-Device C6
 U 1 1 5C55986B
 P 2900 5700
 F 0 "C6" H 2992 5746 50  0000 L CNN
@@ -741,7 +741,7 @@ Connection ~ 2900 5900
 Wire Wire Line
 	2900 5900 2900 5950
 $Comp
-L Device:CP_Small C9
+L GPSDO-LCD-2-rescue:CP_Small-Device C9
 U 1 1 5C585845
 P 3250 4200
 F 0 "C9" H 3050 4300 50  0000 L CNN
@@ -752,7 +752,7 @@ F 3 "~" H 3250 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C5
+L GPSDO-LCD-2-rescue:C_Small-Device C5
 U 1 1 5C585943
 P 2350 3450
 F 0 "C5" H 2450 3400 50  0000 L CNN
@@ -767,7 +767,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 3350 2350 3300
 $Comp
-L power:GNDREF #PWR011
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR011
 U 1 1 5C592172
 P 3250 4300
 F 0 "#PWR011" H 3250 4050 50  0001 C CNN
@@ -778,7 +778,7 @@ F 3 "" H 3250 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR05
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR05
 U 1 1 5C5921E8
 P 2350 3550
 F 0 "#PWR05" H 2350 3300 50  0001 C CNN
@@ -793,7 +793,7 @@ Text GLabel 2450 2700 2    50   Input ~ 0
 Wire Wire Line
 	2350 3300 2900 3300
 $Comp
-L Device:R R6
+L GPSDO-LCD-2-rescue:R-Device R6
 U 1 1 5C598CFC
 P 3400 5150
 F 0 "R6" H 3470 5196 50  0000 L CNN
@@ -804,7 +804,7 @@ F 3 "~" H 3400 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L GPSDO-LCD-2-rescue:R-Device R7
 U 1 1 5C598DFE
 P 3400 5700
 F 0 "R7" H 3470 5746 50  0000 L CNN
@@ -828,7 +828,7 @@ Connection ~ 3400 5450
 Wire Wire Line
 	3400 5450 3400 5550
 $Comp
-L Device:C_Small C16
+L GPSDO-LCD-2-rescue:C_Small-Device C16
 U 1 1 5C5B4AF5
 P 3850 5700
 F 0 "C16" H 3942 5746 50  0000 L CNN
@@ -843,7 +843,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 5450 3850 5600
 $Comp
-L Device:C_Small C8
+L GPSDO-LCD-2-rescue:C_Small-Device C8
 U 1 1 5C5F1575
 P 3850 7200
 F 0 "C8" H 3950 7200 50  0000 L CNN
@@ -854,7 +854,7 @@ F 3 "~" H 3850 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C18
+L GPSDO-LCD-2-rescue:CP_Small-Device C18
 U 1 1 5C5F157B
 P 4950 7200
 F 0 "C18" H 5000 7100 50  0000 L CNN
@@ -865,7 +865,7 @@ F 3 "~" H 4950 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C15
+L GPSDO-LCD-2-rescue:CP_Small-Device C15
 U 1 1 5C5F1581
 P 4600 7200
 F 0 "C15" H 4400 7100 50  0000 L CNN
@@ -876,7 +876,7 @@ F 3 "~" H 4600 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR010
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR010
 U 1 1 5C5F1592
 P 3850 7300
 F 0 "#PWR010" H 3850 7050 50  0001 C CNN
@@ -887,7 +887,7 @@ F 3 "" H 3850 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR017
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR017
 U 1 1 5C5F1598
 P 4600 7300
 F 0 "#PWR017" H 4600 7050 50  0001 C CNN
@@ -898,7 +898,7 @@ F 3 "" H 4600 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR020
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR020
 U 1 1 5C5F159E
 P 4950 7300
 F 0 "#PWR020" H 4950 7050 50  0001 C CNN
@@ -935,7 +935,7 @@ OCXO
 Text Notes 3550 6800 0    50   ~ 0
 DC Control
 $Comp
-L Device:R R18
+L GPSDO-LCD-2-rescue:R-Device R18
 U 1 1 5C9605C3
 P 6950 3100
 F 0 "R18" V 6800 3100 50  0000 C CNN
@@ -946,7 +946,7 @@ F 3 "~" H 6950 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R19
+L GPSDO-LCD-2-rescue:R-Device R19
 U 1 1 5C9606EF
 P 7350 3200
 F 0 "R19" V 7200 3200 50  0000 C CNN
@@ -957,7 +957,7 @@ F 3 "~" H 7350 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R21
+L GPSDO-LCD-2-rescue:R-Device R21
 U 1 1 5C96081D
 P 7800 3300
 F 0 "R21" V 7650 3300 50  0000 C CNN
@@ -974,7 +974,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 3300 8600 3300
 $Comp
-L Regulator_Linear:LM1084-ADJ U2
+L GPSDO-LCD-2-rescue:LM1084-ADJ-Regulator_Linear U2
 U 1 1 5C49DDF4
 P 5150 1000
 F 0 "U2" H 5000 1150 50  0000 C CNN
@@ -985,7 +985,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 5150 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:LM1084-ADJ U5
+L GPSDO-LCD-2-rescue:LM1084-ADJ-Regulator_Linear U5
 U 1 1 5C4A672D
 P 9150 1000
 F 0 "U5" H 9000 1150 50  0000 C CNN
@@ -996,7 +996,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 9150 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Core_Ferrite L2
+L GPSDO-LCD-2-rescue:L_Core_Ferrite-Device L2
 U 1 1 5C4C6FCE
 P 3700 1000
 F 0 "L2" V 3925 1000 50  0000 C CNN
@@ -1012,7 +1012,7 @@ Wire Wire Line
 	3850 1000 3950 1000
 Connection ~ 3950 1000
 $Comp
-L Device:C_Small C10
+L GPSDO-LCD-2-rescue:C_Small-Device C10
 U 1 1 5C4D7A04
 P 3400 1200
 F 0 "C10" H 3492 1246 50  0000 L CNN
@@ -1023,7 +1023,7 @@ F 3 "~" H 3400 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR012
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR012
 U 1 1 5C4D7AC6
 P 3400 1300
 F 0 "#PWR012" H 3400 1050 50  0001 C CNN
@@ -1039,7 +1039,7 @@ Connection ~ 3400 1000
 Wire Wire Line
 	3400 1000 3000 1000
 $Comp
-L Device:R R9
+L GPSDO-LCD-2-rescue:R-Device R9
 U 1 1 5C4E8BEE
 P 5150 1600
 F 0 "R9" H 4950 1650 50  0000 L CNN
@@ -1050,7 +1050,7 @@ F 3 "~" H 5150 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R11
+L GPSDO-LCD-2-rescue:R-Device R11
 U 1 1 5C4E8DBC
 P 5550 1200
 F 0 "R11" H 5620 1246 50  0000 L CNN
@@ -1066,7 +1066,7 @@ Connection ~ 5550 1000
 Wire Wire Line
 	5550 1000 6200 1000
 $Comp
-L Device:CP_Small C21
+L GPSDO-LCD-2-rescue:CP_Small-Device C21
 U 1 1 5C4FA09F
 P 5550 1650
 F 0 "C21" H 5638 1696 50  0000 L CNN
@@ -1077,7 +1077,7 @@ F 3 "~" H 5550 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR025
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR025
 U 1 1 5C502C46
 P 5550 1750
 F 0 "#PWR025" H 5550 1500 50  0001 C CNN
@@ -1095,7 +1095,7 @@ Connection ~ 5550 1400
 Wire Wire Line
 	5550 1400 5550 1550
 $Comp
-L Device:CP_Small C36
+L GPSDO-LCD-2-rescue:CP_Small-Device C36
 U 1 1 5C530B74
 P 9800 1850
 F 0 "C36" H 9888 1896 50  0000 L CNN
@@ -1106,7 +1106,7 @@ F 3 "~" H 9800 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R22
+L GPSDO-LCD-2-rescue:R-Device R22
 U 1 1 5C530C7D
 P 8900 1850
 F 0 "R22" H 8700 1900 50  0000 L CNN
@@ -1117,7 +1117,7 @@ F 3 "~" H 8900 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R25
+L GPSDO-LCD-2-rescue:R-Device R25
 U 1 1 5C530EC9
 P 9800 1200
 F 0 "R25" H 9870 1246 50  0000 L CNN
@@ -1128,7 +1128,7 @@ F 3 "~" H 9800 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR039
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR039
 U 1 1 5C5310A6
 P 8900 2000
 F 0 "#PWR039" H 8900 1750 50  0001 C CNN
@@ -1139,7 +1139,7 @@ F 3 "" H 8900 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR045
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR045
 U 1 1 5C531146
 P 9800 2000
 F 0 "#PWR045" H 9800 1750 50  0001 C CNN
@@ -1196,7 +1196,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 1000 8300 1000
 $Comp
-L Device:CP_Small C33
+L GPSDO-LCD-2-rescue:CP_Small-Device C33
 U 1 1 5C6C283B
 P 7850 1200
 F 0 "C33" H 7938 1246 50  0000 L CNN
@@ -1214,7 +1214,7 @@ Wire Wire Line
 	10150 1000 9800 1000
 Connection ~ 9800 1000
 $Comp
-L Device:C_Small C34
+L GPSDO-LCD-2-rescue:C_Small-Device C34
 U 1 1 5C6D7C6D
 P 8300 1200
 F 0 "C34" H 8392 1246 50  0000 L CNN
@@ -1225,7 +1225,7 @@ F 3 "~" H 8300 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR037
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR037
 U 1 1 5C6D7D3B
 P 7850 1300
 F 0 "#PWR037" H 7850 1050 50  0001 C CNN
@@ -1236,7 +1236,7 @@ F 3 "" H 7850 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR038
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR038
 U 1 1 5C6D7DD9
 P 8300 1300
 F 0 "#PWR038" H 8300 1050 50  0001 C CNN
@@ -1255,7 +1255,7 @@ Connection ~ 8300 1000
 Wire Wire Line
 	8300 1000 8850 1000
 $Comp
-L Device:R R12
+L GPSDO-LCD-2-rescue:R-Device R12
 U 1 1 5C7294C9
 P 5800 6100
 F 0 "R12" V 5900 6200 50  0000 C CNN
@@ -1266,7 +1266,7 @@ F 3 "~" H 5800 6100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R17
+L GPSDO-LCD-2-rescue:R-Device R17
 U 1 1 5C733447
 P 6850 5950
 F 0 "R17" H 6920 5996 50  0000 L CNN
@@ -1277,7 +1277,7 @@ F 3 "~" H 6850 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR030
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR030
 U 1 1 5C733529
 P 6850 6100
 F 0 "#PWR030" H 6850 5850 50  0001 C CNN
@@ -1288,7 +1288,7 @@ F 3 "" H 6850 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R15
+L GPSDO-LCD-2-rescue:R-Device R15
 U 1 1 5C733794
 P 6550 6300
 F 0 "R15" V 6450 6200 50  0000 C CNN
@@ -1299,7 +1299,7 @@ F 3 "~" H 6550 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C20
+L GPSDO-LCD-2-rescue:C_Small-Device C20
 U 1 1 5C73399C
 P 5100 6500
 F 0 "C20" H 5200 6500 50  0000 L CNN
@@ -1310,7 +1310,7 @@ F 3 "~" H 5100 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L GPSDO-LCD-2-rescue:R-Device R10
 U 1 1 5C733A63
 P 5400 6300
 F 0 "R10" V 5300 6200 50  0000 C CNN
@@ -1321,7 +1321,7 @@ F 3 "~" H 5400 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C22
+L GPSDO-LCD-2-rescue:C_Small-Device C22
 U 1 1 5C733BA8
 P 5750 6500
 F 0 "C22" H 5650 6050 50  0000 L CNN
@@ -1332,7 +1332,7 @@ F 3 "~" H 5750 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR023
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR023
 U 1 1 5C747BB8
 P 5100 6600
 F 0 "#PWR023" H 5100 6350 50  0001 C CNN
@@ -1343,7 +1343,7 @@ F 3 "" H 5100 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR022
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR022
 U 1 1 5C747C64
 P 4800 6600
 F 0 "#PWR022" H 4800 6350 50  0001 C CNN
@@ -1362,7 +1362,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 6300 5250 6300
 $Comp
-L Device:C_Small C30
+L GPSDO-LCD-2-rescue:C_Small-Device C30
 U 1 1 5C9A6BAA
 P 7150 5950
 F 0 "C30" H 7242 5996 50  0000 L CNN
@@ -1373,7 +1373,7 @@ F 3 "~" H 7150 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C32
+L GPSDO-LCD-2-rescue:CP_Small-Device C32
 U 1 1 5C9A6CB3
 P 7600 5950
 F 0 "C32" H 7688 5996 50  0000 L CNN
@@ -1384,7 +1384,7 @@ F 3 "~" H 7600 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR034
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR034
 U 1 1 5C9A6D8D
 P 7150 6100
 F 0 "#PWR034" H 7150 5850 50  0001 C CNN
@@ -1395,7 +1395,7 @@ F 3 "" H 7150 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR036
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR036
 U 1 1 5C9A6E3D
 P 7600 6100
 F 0 "#PWR036" H 7600 5850 50  0001 C CNN
@@ -1421,7 +1421,7 @@ SOT23
 Text Notes 3550 7000 0    50   ~ 0
 5V/12V
 $Comp
-L Device:R R16
+L GPSDO-LCD-2-rescue:R-Device R16
 U 1 1 5CA0AD0E
 P 6550 6450
 F 0 "R16" V 6650 6350 50  0000 C CNN
@@ -1435,7 +1435,7 @@ Connection ~ 6000 6300
 Wire Wire Line
 	6000 6300 6250 6300
 $Comp
-L Device:L_Core_Ferrite L1
+L GPSDO-LCD-2-rescue:L_Core_Ferrite-Device L1
 U 1 1 5CA620B0
 P 2350 3000
 F 0 "L1" H 2309 2954 50  0000 R CNN
@@ -1453,7 +1453,7 @@ Wire Wire Line
 	2350 2700 2450 2700
 Connection ~ 2350 3300
 $Comp
-L Device:L_Core_Ferrite L3
+L GPSDO-LCD-2-rescue:L_Core_Ferrite-Device L3
 U 1 1 5CB3316A
 P 7450 5450
 F 0 "L3" V 7675 5450 50  0000 C CNN
@@ -1468,7 +1468,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 1700 9400 1600
 $Comp
-L power:GNDREF #PWR043
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR043
 U 1 1 5C5A9FF6
 P 9400 2000
 F 0 "#PWR043" H 9400 1750 50  0001 C CNN
@@ -1479,7 +1479,7 @@ F 3 "" H 9400 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R23
+L GPSDO-LCD-2-rescue:R-Device R23
 U 1 1 5C5A9FF0
 P 9400 1850
 F 0 "R23" H 9200 1900 50  0000 L CNN
@@ -1492,7 +1492,7 @@ $EndComp
 Wire Wire Line
 	8900 1600 8900 1700
 $Comp
-L Device:C_Small C23
+L GPSDO-LCD-2-rescue:C_Small-Device C23
 U 1 1 5CC21732
 P 6000 6500
 F 0 "C23" H 6050 6600 50  0000 L CNN
@@ -1503,7 +1503,7 @@ F 3 "~" H 6000 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR026
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR026
 U 1 1 5CC218E4
 P 6000 6600
 F 0 "#PWR026" H 6000 6350 50  0001 C CNN
@@ -1530,7 +1530,7 @@ Connection ~ 2900 4000
 Wire Wire Line
 	2900 4000 2900 4150
 $Comp
-L Device:R R8
+L GPSDO-LCD-2-rescue:R-Device R8
 U 1 1 5C4F9053
 P 3850 3800
 F 0 "R8" V 3950 3700 50  0000 C CNN
@@ -1545,7 +1545,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 3800 4300 3800
 $Comp
-L Device:C_Small C14
+L GPSDO-LCD-2-rescue:C_Small-Device C14
 U 1 1 5C5367A7
 P 3550 4200
 F 0 "C14" H 3650 4200 50  0000 L CNN
@@ -1556,7 +1556,7 @@ F 3 "~" H 3550 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR016
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR016
 U 1 1 5C53694C
 P 3550 4300
 F 0 "#PWR016" H 3550 4050 50  0001 C CNN
@@ -1569,7 +1569,7 @@ $EndComp
 Wire Wire Line
 	3550 4100 3550 3800
 $Comp
-L Device:C_Small C13
+L GPSDO-LCD-2-rescue:C_Small-Device C13
 U 1 1 5C5F2D76
 P 3550 3450
 F 0 "C13" H 3650 3450 50  0000 L CNN
@@ -1580,7 +1580,7 @@ F 3 "~" H 3550 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C12
+L GPSDO-LCD-2-rescue:C_Small-Device C12
 U 1 1 5C5F2E5A
 P 3550 3000
 F 0 "C12" H 3650 3000 50  0000 L CNN
@@ -1591,7 +1591,7 @@ F 3 "~" H 3550 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C11
+L GPSDO-LCD-2-rescue:C_Small-Device C11
 U 1 1 5C5F2F30
 P 3550 2600
 F 0 "C11" H 3650 2600 50  0000 L CNN
@@ -1608,7 +1608,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 3350 3550 3300
 $Comp
-L power:GNDREF #PWR013
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR013
 U 1 1 5C623160
 P 3550 2700
 F 0 "#PWR013" H 3550 2450 50  0001 C CNN
@@ -1619,7 +1619,7 @@ F 3 "" H 3550 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR014
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR014
 U 1 1 5C623216
 P 3550 3100
 F 0 "#PWR014" H 3550 2850 50  0001 C CNN
@@ -1630,7 +1630,7 @@ F 3 "" H 3550 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR015
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR015
 U 1 1 5C6232CC
 P 3550 3550
 F 0 "#PWR015" H 3550 3300 50  0001 C CNN
@@ -1641,7 +1641,7 @@ F 3 "" H 3550 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C26
+L GPSDO-LCD-2-rescue:C_Small-Device C26
 U 1 1 5C625161
 P 6750 3550
 F 0 "C26" H 6850 3550 50  0000 L CNN
@@ -1652,7 +1652,7 @@ F 3 "~" H 6750 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C28
+L GPSDO-LCD-2-rescue:C_Small-Device C28
 U 1 1 5C62524D
 P 7150 3550
 F 0 "C28" H 7250 3550 50  0000 L CNN
@@ -1663,7 +1663,7 @@ F 3 "~" H 7150 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C31
+L GPSDO-LCD-2-rescue:C_Small-Device C31
 U 1 1 5C625357
 P 7550 3550
 F 0 "C31" H 7650 3550 50  0000 L CNN
@@ -1674,7 +1674,7 @@ F 3 "~" H 7550 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR029
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR029
 U 1 1 5C6256D3
 P 6750 3650
 F 0 "#PWR029" H 6750 3400 50  0001 C CNN
@@ -1685,7 +1685,7 @@ F 3 "" H 6750 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR032
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR032
 U 1 1 5C625791
 P 7150 3650
 F 0 "#PWR032" H 7150 3400 50  0001 C CNN
@@ -1696,7 +1696,7 @@ F 3 "" H 7150 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR035
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR035
 U 1 1 5C62584F
 P 7550 3650
 F 0 "#PWR035" H 7550 3400 50  0001 C CNN
@@ -1707,7 +1707,7 @@ F 3 "" H 7550 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C35
+L GPSDO-LCD-2-rescue:C_Small-Device C35
 U 1 1 5C66B378
 P 8700 4400
 F 0 "C35" H 8800 4400 50  0000 L CNN
@@ -1718,7 +1718,7 @@ F 3 "~" H 8700 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR040
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR040
 U 1 1 5C67D041
 P 8700 4500
 F 0 "#PWR040" H 8700 4250 50  0001 C CNN
@@ -1831,7 +1831,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 3800 3700 3800
 $Comp
-L Device:R R13
+L GPSDO-LCD-2-rescue:R-Device R13
 U 1 1 5C5121C2
 P 6250 2100
 F 0 "R13" V 6150 2050 50  0000 C CNN
@@ -1842,7 +1842,7 @@ F 3 "~" H 6250 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R14
+L GPSDO-LCD-2-rescue:R-Device R14
 U 1 1 5C5124DF
 P 6250 2350
 F 0 "R14" V 6150 2300 50  0000 C CNN
@@ -1853,7 +1853,7 @@ F 3 "~" H 6250 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C7
+L GPSDO-LCD-2-rescue:C_Small-Device C7
 U 1 1 5C512798
 P 2950 2100
 F 0 "C7" V 2800 2100 50  0000 C CNN
@@ -1891,7 +1891,7 @@ Connection ~ 5950 2100
 Wire Wire Line
 	5950 2100 6100 2100
 $Comp
-L Device:C_Small C27
+L GPSDO-LCD-2-rescue:C_Small-Device C27
 U 1 1 5C638035
 P 6900 2500
 F 0 "C27" H 6808 2454 50  0000 R CNN
@@ -1917,7 +1917,7 @@ Wire Wire Line
 	8700 4300 8700 4250
 Connection ~ 8700 4250
 $Comp
-L Personal:OCXO-CTI_OSC5A U8
+L GPSDO-LCD-2-rescue:OCXO-CTI_OSC5A-Personal U8
 U 1 1 5C8BEC79
 P 2600 6500
 F 0 "U8" H 2600 6950 50  0000 C CNN
@@ -1938,7 +1938,7 @@ $EndSheet
 Text Notes 9300 6050 0    50   ~ 0
 DIAGRAMA\n   DE\nBLOQUES
 $Comp
-L Device:R R27
+L GPSDO-LCD-2-rescue:R-Device R27
 U 1 1 5C53BC29
 P 3850 6150
 F 0 "R27" H 3900 6200 50  0000 L CNN
@@ -1949,7 +1949,7 @@ F 3 "~" H 3850 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R26
+L GPSDO-LCD-2-rescue:R-Device R26
 U 1 1 5C53BDDD
 P 3650 5900
 F 0 "R26" V 3750 5900 50  0000 C CNN
@@ -1972,7 +1972,7 @@ Wire Wire Line
 	3500 5900 3400 5900
 Connection ~ 3400 5900
 $Comp
-L Personal:STP2145A U9
+L GPSDO-LCD-2-rescue:STP2145A-Personal U9
 U 1 1 5C5CF5AC
 P 2550 7350
 F 0 "U9" H 2550 7800 50  0000 C CNN
@@ -2032,7 +2032,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 7550 4300 7550
 $Comp
-L Device:R R20
+L GPSDO-LCD-2-rescue:R-Device R20
 U 1 1 5C8BC990
 P 4300 5450
 F 0 "R20" H 4050 5550 50  0000 L CNN
@@ -2049,7 +2049,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 3500 8600 3300
 $Comp
-L Device:R R29
+L GPSDO-LCD-2-rescue:R-Device R29
 U 1 1 5C91D9E0
 P 8200 3400
 F 0 "R29" V 8050 3400 50  0000 C CNN
@@ -2076,7 +2076,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 3400 8000 3400
 $Comp
-L Device:C_Small C29
+L GPSDO-LCD-2-rescue:C_Small-Device C29
 U 1 1 5CA5A279
 P 8000 3550
 F 0 "C29" H 8100 3550 50  0000 L CNN
@@ -2087,7 +2087,7 @@ F 3 "~" H 8000 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR048
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR048
 U 1 1 5CA5A27F
 P 8000 3650
 F 0 "#PWR048" H 8000 3400 50  0001 C CNN
@@ -2118,7 +2118,7 @@ Connection ~ 6750 3100
 Wire Wire Line
 	6750 3100 6800 3100
 $Comp
-L Device:R R28
+L GPSDO-LCD-2-rescue:R-Device R28
 U 1 1 5CABAF59
 P 4500 5250
 F 0 "R28" V 4400 5150 50  0000 L CNN
@@ -2141,7 +2141,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 3750 2050 4700
 $Comp
-L power:GNDREF #PWR049
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR049
 U 1 1 5C569C10
 P 1850 7450
 F 0 "#PWR049" H 1850 7200 50  0001 C CNN
@@ -2188,7 +2188,7 @@ Connection ~ 4300 5250
 Wire Wire Line
 	4150 3100 4150 4500
 $Comp
-L Device:C_Small C39
+L GPSDO-LCD-2-rescue:C_Small-Device C39
 U 1 1 5C6C0EA7
 P 3550 4700
 F 0 "C39" H 3642 4746 50  0000 L CNN
@@ -2199,7 +2199,7 @@ F 3 "~" H 3550 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR050
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR050
 U 1 1 5C6C10CD
 P 3550 4800
 F 0 "#PWR050" H 3550 4550 50  0001 C CNN
@@ -2217,7 +2217,7 @@ Connection ~ 4150 4500
 Wire Wire Line
 	4150 4500 4150 4900
 $Comp
-L Device:R R30
+L GPSDO-LCD-2-rescue:R-Device R30
 U 1 1 5C6EE416
 P 3000 1250
 F 0 "R30" H 3070 1296 50  0000 L CNN
@@ -2228,7 +2228,7 @@ F 3 "~" H 3000 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R31
+L GPSDO-LCD-2-rescue:R-Device R31
 U 1 1 5C6EE5CC
 P 3850 1750
 F 0 "R31" H 3780 1704 50  0000 R CNN
@@ -2239,7 +2239,7 @@ F 3 "~" H 3850 1750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C38
+L GPSDO-LCD-2-rescue:C_Small-Device C38
 U 1 1 5C6EE75F
 P 3400 1700
 F 0 "C38" H 3308 1654 50  0000 R CNN
@@ -2270,7 +2270,7 @@ Wire Wire Line
 	4150 3000 4300 3000
 Connection ~ 3850 1500
 $Comp
-L power:GNDREF #PWR051
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR051
 U 1 1 5C74BAD8
 P 3850 1900
 F 0 "#PWR051" H 3850 1650 50  0001 C CNN
@@ -2281,7 +2281,7 @@ F 3 "" H 3850 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR033
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR033
 U 1 1 5C74BCD5
 P 3400 1900
 F 0 "#PWR033" H 3400 1650 50  0001 C CNN
@@ -2294,7 +2294,7 @@ $EndComp
 Wire Wire Line
 	3400 1800 3400 1900
 $Comp
-L Device:R R32
+L GPSDO-LCD-2-rescue:R-Device R32
 U 1 1 5C7C78DE
 P 4050 6400
 F 0 "R32" V 3950 6400 50  0000 C CNN
@@ -2315,7 +2315,7 @@ Connection ~ 4800 6400
 Wire Wire Line
 	4800 6400 4800 5600
 $Comp
-L Personal:LMP7731 U4
+L GPSDO-LCD-2-rescue:LMP7731-Personal U4
 U 1 1 5C58E5F3
 P 5800 5600
 F 0 "U4" H 5500 5900 50  0000 C CNN
@@ -2328,7 +2328,7 @@ $EndComp
 Wire Wire Line
 	3950 5000 9550 5000
 $Comp
-L Personal:Jack_DC U10
+L GPSDO-LCD-2-rescue:Jack_DC-Personal U10
 U 1 1 5C6188F3
 P 850 1100
 F 0 "U10" H 850 1500 60  0000 C CNN
@@ -2347,7 +2347,7 @@ Connection ~ 3000 1000
 Wire Wire Line
 	4400 700  4400 1000
 $Comp
-L Connector_Generic:Conn_02x02_Counter_Clockwise J5
+L GPSDO-LCD-2-rescue:Conn_02x02_Counter_Clockwise-Connector_Generic J5
 U 1 1 5C65696E
 P 2250 1200
 F 0 "J5" V 2254 1280 50  0000 L CNN
@@ -2360,7 +2360,7 @@ $EndComp
 Wire Wire Line
 	1850 1000 2250 1000
 $Comp
-L power:GNDREF #PWR052
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR052
 U 1 1 5C68A94A
 P 2250 1500
 F 0 "#PWR052" H 2250 1250 50  0001 C CNN
@@ -2371,7 +2371,7 @@ F 3 "" H 2250 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR053
+L GPSDO-LCD-2-rescue:GNDREF-power #PWR053
 U 1 1 5C68AA2A
 P 2350 1500
 F 0 "#PWR053" H 2350 1250 50  0001 C CNN
@@ -2384,7 +2384,7 @@ $EndComp
 Text Notes 1950 1700 0    59   ~ 0
 Vin - 7/14V out
 $Comp
-L Jumper:SolderJumper_3_Open JP2
+L GPSDO-LCD-2-rescue:SolderJumper_3_Open-Jumper JP2
 U 1 1 5C68C18B
 P 9150 1600
 F 0 "JP2" H 9150 1713 50  0000 C CNN
@@ -2395,7 +2395,7 @@ F 3 "~" H 9150 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP1
+L GPSDO-LCD-2-rescue:SolderJumper_3_Open-Jumper JP1
 U 1 1 5C68C585
 P 7900 5450
 F 0 "JP1" V 7900 5550 50  0000 L CNN

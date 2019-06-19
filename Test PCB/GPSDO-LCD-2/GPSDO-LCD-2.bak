@@ -2349,18 +2349,16 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x02_Counter_Clockwise J5
 U 1 1 5C65696E
-P 2350 1200
-F 0 "J5" V 2354 1280 50  0000 L CNN
-F 1 "Conn_02x02_Counter_Clockwise" V 2800 600 50  0001 L CNN
-F 2 "Connectors_Samtec:SDL-104-X-XX_2x02" H 2350 1200 50  0001 C CNN
-F 3 "~" H 2350 1200 50  0001 C CNN
-	1    2350 1200
-	0    1    1    0   
+P 2250 1200
+F 0 "J5" V 2254 1280 50  0000 L CNN
+F 1 "Conn_02x02_Counter_Clockwise" V 2700 600 50  0001 L CNN
+F 2 "Connectors_Samtec:SDL-104-X-XX_2x02" H 2250 1200 50  0001 C CNN
+F 3 "~" H 2250 1200 50  0001 C CNN
+	1    2250 1200
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	1850 1000 2250 1000
-Wire Wire Line
-	2350 1000 3000 1000
 $Comp
 L power:GNDREF #PWR052
 U 1 1 5C68A94A
@@ -2407,4 +2405,6 @@ F 3 "~" H 7900 5450 50  0001 C CNN
 	1    7900 5450
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	2350 1000 3000 1000
 $EndSCHEMATC

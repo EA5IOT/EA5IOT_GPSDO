@@ -61,6 +61,7 @@ LiquidCrystal2 LCD(RS, EN, DB4, DB5, DB6, DB7);
 
 void setup()
 {
+  afio_cfg_debug_ports(AFIO_DEBUG_SW_ONLY);                                     // Se deshabilitan los pines JTAG, pero se permiten los pines para ST-LINK
   Cambiar_CPU_CLK();                                                            // Cambiamos el reloj del sistema a 100Mhz con cristal externo de 10Mhz
   
   Timer1MSB = 0;
