@@ -14,7 +14,8 @@
 #define Timer1Ch1   PA8                                                         // Señal de 1PPS del gps (Activa cuando el GPS está enganchado), cable naranja
 #define Timer1Ch2   PA9                                                         // Salida PWM Control de Frecuencia
 #define Timer1Ch3   PA10															                          // Salida PWM contraste pantalla, cable verde pata 3 Pantalla
-#define OcxoGain    50.0
+#define OcxoGain    90.0
+#define OcxoK2      1.0
 
 #define RS		      PB9															                            // Pin 4 pantalla, cable blanco
 //#define RW              																                      // Pin 5 (a masa directamente, no se usa y así evitamos poner los conversores de 5 a 3,3V)
@@ -160,9 +161,9 @@ void Timer1InputCapture1(void)
     {
 		  FrecEstimada1 += KF1 * (CuentaTotal1 - FrecEstimada1);                    // Se estima la Frecuencia actual del XTAL
       Dif1 = (FrecRequerida1 - FrecEstimada1);
-      KF1 = abs(Dif1) * 0.5;
-      KF1 += 0.05;                                                              // Valor minimo de k
-      if (KF1 > 0.9) KF1 = 0.9;                                                 // Valor maximo de k
+      KF1 = abs(Dif1) * OcxoK2;
+      if (KF1 < 0.01) KF1 = 0.01;                                               // Valor minimo de k
+      if (KF1 > 0.99) KF1 = 0.99;                                               // Valor maximo de k
       Pwm += Dif1 * KF1 * OcxoGain;                                             // Se varía el incremento del PWM en función de la cantidad de error, a mas error mayor variación
       if (Pwm > 65535.0) Pwm = 65535.0;
       if (Pwm < 0.0) Pwm = 0.0;
