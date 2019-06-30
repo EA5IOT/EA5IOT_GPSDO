@@ -14,6 +14,7 @@
 #define Timer1Ch1   PA8                                                         // Señal de 1PPS del gps (Activa cuando el GPS está enganchado), cable naranja
 #define Timer1Ch2   PA9                                                         // Salida PWM Control de Frecuencia
 #define Timer1Ch3   PA10															                          // Salida PWM contraste pantalla, cable verde pata 3 Pantalla
+#define OcxoGain    50.0
 
 #define RS		      PB9															                            // Pin 4 pantalla, cable blanco
 //#define RW              																                      // Pin 5 (a masa directamente, no se usa y así evitamos poner los conversores de 5 a 3,3V)
@@ -75,7 +76,7 @@ void setup()
                                                                                 // +-250ppb el STP2145A, +-1,5ppm el CTI
                                                                                 // +-1,5ppm = +-150Hz en 100Mhz
                                                                                 // +-0,25ppm = +- 25Hz en 100Mhz
-  KF1 = 1 / MaxDes1;
+  KF1 = 0.1;
   PrimerValor1 = false;
   DatoNuevo1 = false;
   Pwm = 32768.0;                                                                // Iniciamos el PWM al 50%
@@ -140,7 +141,6 @@ void Timer1UpdateInt(void)
 void Timer1InputCapture1(void)
 {
   uint16_t temp;
-  double signo;
     
   CaptureNew1 = TIMER1->regs.gen->CCR1;                                         // Se almacena el valor del contador cuando se produce el pulso de 1pps
   TIMER1->regs.gen->SR &= 0x1EFD;                                               // Se resetea la bandera de input capture canal1
@@ -158,20 +158,12 @@ void Timer1InputCapture1(void)
 
     if ((CuentaTotal1 > (FrecRequerida1 - MaxDes1)) && (CuentaTotal1 < (FrecRequerida1 + MaxDes1)))  // Se comprueba que no se haya leido mal la frecuencia del Xtal
     {
-      if (Dif1 != 0.0)
-      {
-        FrecEstimada1 += KF1 * Dif1 * (CuentaTotal1 - FrecEstimada1);           // Se estima la Frecuencia actual del XTAL, a mayor error mayor velocidad de control
-      } else
-      {
-        FrecEstimada1 += KF1 * (CuentaTotal1 - FrecEstimada1);                  // Se estima la Frecuencia actual del XTAL
-      };
-
+		  FrecEstimada1 += KF1 * (CuentaTotal1 - FrecEstimada1);                    // Se estima la Frecuencia actual del XTAL
       Dif1 = (FrecRequerida1 - FrecEstimada1);
-
-      if (Dif1 >= 0.0) signo = 1.0; else signo = -1.0;
-
-      Pwm += Dif1 * (Dif1 * 5.0) * signo;                                       // Se varía el incremento del PWM en función de la cantidad de error, a mas error mayor variación
-      
+      KF1 = abs(Dif1) * 0.5;
+      KF1 += 0.05;                                                              // Valor minimo de k
+      if (KF1 > 0.9) KF1 = 0.9;                                                 // Valor maximo de k
+      Pwm += Dif1 * KF1 * OcxoGain;                                             // Se varía el incremento del PWM en función de la cantidad de error, a mas error mayor variación
       if (Pwm > 65535.0) Pwm = 65535.0;
       if (Pwm < 0.0) Pwm = 0.0;
       TIMER1->regs.gen->CCR2 = uint16_t(Pwm);                                   // Se actualiza el valor del PWM para controlar la frecuencia del oscilador
@@ -287,4 +279,3 @@ void IniciarContador(void)
 
   return;
 }
-
