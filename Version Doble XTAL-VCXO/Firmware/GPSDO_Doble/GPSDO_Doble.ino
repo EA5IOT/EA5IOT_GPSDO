@@ -44,6 +44,7 @@ uint8_t ContadorLed;
 
 void setup()
 {
+  afio_cfg_debug_ports(AFIO_DEBUG_SW_ONLY);                                     // Se deshabilitan los pines JTAG, pero se permiten los pines para ST-LINK
   Serial.begin(115200);
 
   Timer3MSB = 0;
